@@ -11,7 +11,7 @@ if($conn->connect_error){
 }
 else{
     // echo "connection succeed";
-}
+
 
 if(isset($_POST['submit'])){
 
@@ -87,7 +87,7 @@ else{ //count($errors)== 0
     $q->bind_param("sssss",$userName,$email,$hash,$gender,$fileName);
     $q->execute();
     
-}}
+}}}
 ?>
 <!DOCTYPE html>
 <html lang="en">
